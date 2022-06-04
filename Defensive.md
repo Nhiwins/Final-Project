@@ -8,49 +8,28 @@
 - Suggestions for Going Further
 
 ### Network Topology
-The following machines were identified:
+The following machines were identified on the network:
 
-**Kali**
-- Operating System: 
-    - Debian Kali 5.4.0
-- Purpose: 
-    - The Penetration Tester
-- IP Address: 
-    - 192.168.1.90
+- Kali
+  - Operating System: Debian Kali 5.4.0
+  - Purpose: The Penetration Tester
+  - IP Address: 192.168.1.90
 
-**ELK**
-- Operating System: 
-    - Ubuntu 18.04
-- Purpose: 
-    - The ELK (Elasticsearch and Kibana) Stack
-- IP Address: 
-    - 192.168.1.100
+- ELK
+  - Operating System: Ubuntu 18.04
+  - Purpose: The ELK (Elasticsearch and Kibana) Stack
+  - IP Address: 192.168.1.100
 
-**Target 1**
-- Operating System: 
-    - Debian GNU/Linux 8
-- Purpose: 
-    - The WordPress Host
-- IP Address: 
-    - 192.168.1.110
+- Target 1
+  - Operating System: Debian GNU/Linux 8
+  - Purpose: The WordPress Host
+  - IP Address: 192.168.1.110
 
 - Capstone
   - Operating System: Ubuntu 18.04
-  - Purpose: 
-   - The Vulnerable Web Server
-  - IP Address: 
-   - 192.168.1.105
+  - Purpose: The Vulnerable Web Server
+  - IP Address: 192.168.1.105
 
-The following machines were identified on the network:
-- Name of VM 1
-  - **Operating System**:
-  - **Purpose**:
-  - **IP Address**:
-- Name of VM 2
-  - **Operating System**:
-  - **Purpose**:
-  - **IP Address**:
-- Etc.
 
 ### Description of Targets
 _TODO: Answer the questions below._
