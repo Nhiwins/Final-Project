@@ -34,13 +34,12 @@ The following machines were identified:
 - IP Address: 
     - 192.168.1.110
 
-**Capstone**
-- Operating System: 
-    - Ubuntu 18.04
-- Purpose: 
-    - The Vulnerable Web Server
-- IP Address: 
-    - 192.168.1.105
+- Capstone
+  - Operating System: Ubuntu 18.04
+  - Purpose: 
+   - The Vulnerable Web Server
+  - IP Address: 
+   - 192.168.1.105
 
 The following machines were identified on the network:
 - Name of VM 1
