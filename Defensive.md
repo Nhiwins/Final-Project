@@ -29,10 +29,9 @@ The following machines were identified on the network:
   - Operating System: Ubuntu 18.04
   - Purpose: The Vulnerable Web Server
   - IP Address: 192.168.1.105
-# nmap?
+#### nmap?
 
 ### Description of Targets
-_TODO: Answer the questions below._
 
 The target of this attack was: `Target 1` (192.168.1.110).
 
@@ -51,7 +50,7 @@ HTTP Request Size Monitor is implemented as follows:
   - **Vulnerability Mitigated**: DDOS Attacks or XSS
   - **Reliability**: The alert has a low chance of creating false positives, so it has a higher reliability. It is still possible that a large, legitimate HTTP request could set off a false positive.
 
-# PHOTO
+#### PHOTO
 
 #### Excessive HTTP Errors
 Excessive HTTP Errors is implemented as follows:
@@ -61,7 +60,7 @@ Excessive HTTP Errors is implemented as follows:
   - **Vulnerability Mitigated**: Brute Force Attacks
   - **Reliability**: This alert has a high reliability. An excessive amount of HTTP error codes within a short amount of time is a clear sign of brute force or enumeration attempts.
 
-# PHOTO
+#### PHOTO
 
 #### CPU Usage Monitor
 CPU Usage Monitor is implemented as follows:
@@ -71,11 +70,9 @@ CPU Usage Monitor is implemented as follows:
   - **Vulnerability Mitigated**: Malware
   - **Reliability**: This has a relatively high reliability. A high percentage of CPU usage can be a false positive based off of programs running, but it is highly reliable in the case that there is malware.
 
-# PHOTO
+#### PHOTO
 
 ### Suggestions for Going Further
-_TODO_: 
-- Each alert above pertains to a specific vulnerability/exploit. Recall that alerts only detect malicious behavior, but do not stop it. For each vulnerability/exploit identified by the alerts above, suggest a patch. E.g., implementing a blocklist is an effective tactic against brute-force attacks. It is not necessary to explain _how_ to implement each patch.
 
 The logs and alerts generated during the assessment suggest that this network is susceptible to several active threats, identified by the alerts above. In addition to watching for occurrences of such threats, the network should be hardened against them. The Blue Team suggests that IT implement the fixes below to protect the network:
 - HTTP Request Size Monitor
@@ -83,7 +80,7 @@ The logs and alerts generated during the assessment suggest that this network is
   - **Why It Works**: Limiting HTTP request sizes can help to limit DDOS or Code Injection attempts. Input validation helps by rejecting attempts to input code into the server through forms on a site.
 - Excessive HTTP Errors
   - **Patch**:  Wordpress should be updated regularly with `apt-get update` and `apt-get upgrade`. Plugins should also be installed.
-  - **Why It Works**: Updating can easily fix and patch the program for known vulnerabilities. Installing a security plugin for Wordpress can scan for common threats, provide firewall protection, and can sometimes offer malware clean up for an infected Wordpress site.
+  - **Why It Works**: Updating can easily fix and patch the program for known vulnerabilities. Installing a security plugin for Wordpress can scan for common threats, provide firewall protection, and can sometimes offer malware cleanup for an infected Wordpress site.
 - Vulnerability 3
   - **Patch**: An antivirus can be used to harden against malware and viruses. An Intrusion Detection system can also help.
   - **Why It Works**: A good antivirus software can detect and remove most threats if they are present. Intrusion Detection systems allows for monitoring and analyzing of network packets. 
