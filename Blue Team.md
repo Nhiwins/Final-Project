@@ -29,7 +29,6 @@ The following machines were identified on the network:
   - Operating System: Ubuntu 18.04
   - Purpose: The Vulnerable Web Server
   - IP Address: 192.168.1.105
-#### nmap?
 
 ### Description of Targets
 
@@ -50,7 +49,7 @@ HTTP Request Size Monitor is implemented as follows:
   - **Vulnerability Mitigated**: DDOS Attacks or XSS
   - **Reliability**: The alert has a low chance of creating false positives, so it has a higher reliability. It is still possible that a large, legitimate HTTP request could set off a false positive.
 
-#### PHOTO
+![Excessive HTTP Errors](/Images/Alert1.PNG)
 
 #### Excessive HTTP Errors
 Excessive HTTP Errors is implemented as follows:
