@@ -15,19 +15,13 @@ The domain name is **Frank-n-Ted-DC.frank-n-ted.com**.
 
 Filter: `ip.addr==10.6.12.0/24`
 
-Results Screenshot:
-
-![Pcap domain name](/Images/pcap-domain-name.png "Pcap domain name")
-
 2. **What is the IP address of the Domain Controller (DC) of the AD network?**
 
 IP address is **10.6.12.12** (Frank-n-Ted-DC.frank-n-ted.com)
 
 Filter: `ip.addr==10.6.12.0/24`
 
-Results Screenshot of Protocol Info:
-
-![Pcap IP address of domain controller](/Images/pcap-ip-domain-controller.png "Pcap IP address of domain controller")
+![](https://github.com/Nhiwins/Final-Project/blob/main/Images/Network%20FnT.PNG)
 
 3. **What is the name of the malware downloaded to the 10.6.12.203 machine? Once you have found the file, export it to your Kali machine's desktop.**
 
@@ -37,16 +31,12 @@ Filter: `ip.addr==10.16.12.203 and http.request.method==GET`
 
 Export: File > Export Objects > HTTP...
 
-Results Screenshot:
-
-![Pcap of june11.dll malware](/Images/pcap-malware.png "Pcap of june11.dll malware")
+![](https://github.com/Nhiwins/Final-Project/blob/main/Images/Network%20Malware.PNG)
 
 4. **Upload the file to VirusTotal.com. What kind of malware is this classified as?**
 This type of malware is classified as a **Trojan**.
 
-VirusTotal Analysis Screenshot:
-
-![Virus Total june11.dll scan results](/Images/virus-total-results.png "Virus Total june11.dll scan results")
+![](https://github.com/Nhiwins/Final-Project/blob/main/Images/virustotal.png)
 
 ### Vulnerable Windows Machines
 The Security team received reports of an infected Windows host on the network. They know the following:
@@ -65,18 +55,12 @@ Inspect your traffic to answer the following questions:
 
 Filter: `ip.src==172.16.4.4 and kerberos.CNameString`
 
-Results Screenshot:
-
-![Pcap infected Windows machine](/Images/infected-windows-machine.png "Pcap infected Windows machine")
+![](https://github.com/Nhiwins/Final-Project/blob/main/Images/Infected%20machine.PNG)
 
 2. **What is the username of the Windows user whose computer is infected?**
 The username is **matthijs.devries**.
 
-Filter: `ip.src==172.16.4.205 and kerberos.CNameString`
-
-Results Screenshot:
-
-![Pcap username of infected windows machine](/Images/username-infected-windows-machine.png "Pcap username of infected windows machine")
+![](https://github.com/Nhiwins/Final-Project/blob/main/Images/username.PNG)
 
 3. **What are the IP addresses used in the actual infection traffic?**
 Based on the Conversations statistics and then filtering by the highest amount packets between IPs, **172.16.4.205, 185.243.115.84, 166.62.11.64 are the infected traffic**.
@@ -87,13 +71,11 @@ Statistics > Conversations > IPv4 (tab) > Packets (high to low)
 
 Filter: `ip.addr==172.16.4.205 and ip.addr==185.243.115.84`
 
-Results screenshot:
-
-![Pcap IP of infected traffic](/Images/ip-infected-traffic.png "Pcap IP of infected traffic")
+![](https://github.com/Nhiwins/Final-Project/blob/main/Images/ip%20malware%20download.PNG)
 
 4. **As a bonus, retrieve the desktop background of the Windows host.**
 
-![Desktop background of Windows host](/Images/desktop-bg-windows-host.png "Desktop background of Windows host")
+![](https://github.com/Nhiwins/Final-Project/blob/main/Images/background%20img.PNG)
 
 ### Illegal Downloads
 IT was informed that some users are torrenting on the network. The Security team does not forbid the use of torrents for legitimate purposes, such as downloading operating systems. However, they have a strict policy against copyright infringement.
@@ -112,13 +94,13 @@ Your task is to isolate torrent traffic and answer the following questions:
 
 Filter: `ip.src==10.0.0.201 and kerberos.CNameString`
 
-Results Screenshot:
+![](https://github.com/Nhiwins/Final-Project/blob/main/Images/torrent%20mac.PNG)
 
-![IP 10.0.0.201 (elmer.blanco machine)](/Images/elmer-blanco-machine.png "IP 10.0.0.201 (elmer.blanco machine)")
+![](https://github.com/Nhiwins/Final-Project/blob/main/Images/torrent%20os.PNG)
 
 2. **Which torrent file did the user download?**
 The torrent file is **Betty_Boop_Rythm_on_the_Reservation.avi.torrent**.
 
 Filter: `ip.addr==10.0.0.201 and http.request.method==GET`
 
-![Pcap torrent file](/Images/pcap-torrent-file.png "Pcap torrent file")
+![](https://github.com/Nhiwins/Final-Project/blob/main/Images/torrent%20background.png)
