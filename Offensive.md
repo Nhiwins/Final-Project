@@ -22,18 +22,13 @@ This scan identifies the services below as potential points of entry:
   - Port 139 netbios-ssn
   - Port 445 netbios-ssn
 
-_TODO: Fill out the list below. Include severity, and CVE numbers, if possible._
-
 The following vulnerabilities were identified on each target:
 - Target 1
-  - Weak User Password
-  - User Enumeration
-  - User Privelege Escalation
-
-_TODO: Include vulnerability scan results to prove the identified vulnerabilities._
+  - Weak User Password (High Severity)
+  - User Enumeration (Medium Severity)
+  - User Privelege Escalation (High Severity)
 
 ### Exploitation
-_TODO: Fill out the details below. Include screenshots where possible._
 
 The Red Team was able to penetrate Target 1 and retrieve the following confidential data:
 - Target 1
