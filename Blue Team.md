@@ -49,7 +49,7 @@ HTTP Request Size Monitor is implemented as follows:
   - **Vulnerability Mitigated**: DDOS Attacks or XSS
   - **Reliability**: The alert has a low chance of creating false positives, so it has a higher reliability. It is still possible that a large, legitimate HTTP request could set off a false positive.
 
-![](Images/"Alert 1.PNG")
+![](https://github.com/Nhiwins/Final-Project/blob/main/Images/Alert%201.PNG)
 
 #### Excessive HTTP Errors
 Excessive HTTP Errors is implemented as follows:
