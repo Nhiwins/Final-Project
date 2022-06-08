@@ -35,6 +35,9 @@ The following machines were identified on the network:
 The target of this attack was: `Target 1` (192.168.1.110).
 
 Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are possible ports of entry for attackers. As such, the following alerts have been implemented:
+  - HTTP Request Size Monitor
+  - Excessive HTTP Errors
+  - CPU Usage Monitor
 
 ### Monitoring the Targets
 
@@ -59,7 +62,7 @@ Excessive HTTP Errors is implemented as follows:
   - **Vulnerability Mitigated**: Brute Force Attacks
   - **Reliability**: This alert has a high reliability. An excessive amount of HTTP error codes within a short amount of time is a clear sign of brute force or enumeration attempts.
 
-#### PHOTO
+![](https://github.com/Nhiwins/Final-Project/blob/main/Images/Alert%202.PNG)
 
 #### CPU Usage Monitor
 CPU Usage Monitor is implemented as follows:
@@ -69,7 +72,7 @@ CPU Usage Monitor is implemented as follows:
   - **Vulnerability Mitigated**: Malware
   - **Reliability**: This has a relatively high reliability. A high percentage of CPU usage can be a false positive based off of programs running, but it is highly reliable in the case that there is malware.
 
-#### PHOTO
+![](https://github.com/Nhiwins/Final-Project/blob/main/Images/Alert%203.PNG)
 
 ### Suggestions for Going Further
 
