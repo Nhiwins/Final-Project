@@ -49,7 +49,7 @@ The Red Team was able to penetrate Target 1 and retrieve the following confident
   - `flag2`: fc3fd58dcdad9ab23faca6e9a3e581c
     - The same process was used, but I used these commands:
       - `cd /var/www`
-      - `ls' found flag2.txt
+      - `ls` found flag2.txt
 
 ![](https://github.com/Nhiwins/Final-Project/blob/main/Images/flag2.PNG)
 
