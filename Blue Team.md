@@ -77,12 +77,12 @@ CPU Usage Monitor is implemented as follows:
 ### Suggestions for Going Further
 
 The logs and alerts generated during the assessment suggest that this network is susceptible to several active threats, identified by the alerts above. In addition to watching for occurrences of such threats, the network should be hardened against them. The Blue Team suggests that IT implement the fixes below to protect the network:
-- HTTP Request Size Monitor
+- DDOS Attacks or XSS
   - **Patch**: HTTP request limits should be implemented on the server along with input validation on forms.
   - **Why It Works**: Limiting HTTP request sizes can help to limit DDOS or Code Injection attempts. Input validation helps by rejecting attempts to input code into the server through forms on a site.
-- Excessive HTTP Errors
+- Brute Force Attacks
   - **Patch**:  Wordpress should be updated regularly with `apt-get update` and `apt-get upgrade`. Plugins should also be installed.
   - **Why It Works**: Updating can easily fix and patch the program for known vulnerabilities. Installing a security plugin for Wordpress can scan for common threats, provide firewall protection, and can sometimes offer malware cleanup for an infected Wordpress site.
-- Vulnerability 3
+- Malware
   - **Patch**: An antivirus can be used to harden against malware and viruses. An Intrusion Detection system can also help.
   - **Why It Works**: A good antivirus software can detect and remove most threats if they are present. Intrusion Detection systems allows for monitoring and analyzing of network packets. 
